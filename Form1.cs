@@ -16,5 +16,10 @@ namespace klientTCP
         {
             InitializeComponent();
         }
+
+        private void przycisk_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

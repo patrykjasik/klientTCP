@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.przycisk = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // przycisk
+            // 
+            this.przycisk.Location = new System.Drawing.Point(291, 420);
+            this.przycisk.Name = "przycisk";
+            this.przycisk.Size = new System.Drawing.Size(257, 70);
+            this.przycisk.TabIndex = 0;
+            this.przycisk.Text = "Zamknij";
+            this.przycisk.UseVisualStyleBackColor = true;
+            this.przycisk.Click += new System.EventHandler(this.przycisk_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(802, 502);
+            this.Controls.Add(this.przycisk);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button przycisk;
     }
 }
 
